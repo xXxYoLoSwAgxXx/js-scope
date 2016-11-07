@@ -1,0 +1,11 @@
+{
+  "name": "js-scope",
+  "version": "0.0.1",
+  "description": "scope excercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raymond Luong",
+  "license": "MIT"
+}
