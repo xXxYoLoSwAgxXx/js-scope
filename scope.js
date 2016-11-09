@@ -1,4 +1,4 @@
-// Fill in the closeLid and openLid functionality to set the isCookieJarOpen to false or true respectively.
+// Fill in the closeLid and openLid functions to set the isCookieJarOpen variable to false or true respectively.
 var isCookieJarOpen = null;
 
 function closeLid() {
@@ -10,7 +10,8 @@ function openLid() {
 }
 
 
-// Fill in the return value for the inner function to return a string, 'Hello World' using only the variables provided.
+// Fill in the return value for the inner function to return a string, 'Hello World' using only the variables provided
+// in both inner and outer functions
 function outerFunction() {
   var hello = 'Hello';
 
@@ -22,20 +23,24 @@ function outerFunction() {
 }
 
 
-// function takes in a 2d array (matrix) and returns sum of every element.
+// This is a function that takes in a 2d-array (or matrix) and returns the sum of all elements
+// It's broken due to count variables colliding into each other.  Fix it!
 function addMatrixElements(matrix) {
 
   var result = 0;
 
   for(var i = 0; i < matrix.length; i++) {
     /* fix counter variables in the second loop */
-    for(var i = 0; [i].length; i++) {
+    for(var i = 0; i < matrix[i].length; i++) {
       result = result + matrix[i][i];
     }
   }
   return result;
 }
 
+
+// This function is returning the wrong userObject data. It should be returning
+// Neo's information and not Morpheus'.  Fix it!
 function sendDataToClient() {
 
   var userObject = {
@@ -59,15 +64,3 @@ function sendDataToClient() {
   authenticateUser(userObject, 'neo')
   return userObject
 }
-
-
-
-// final excerucse make it a super nested maze and have student write out what it will return, they needa follow all the crrrapppzzz
-
-// excercise to show variable not binding because its trying to access a subling
-
-
-//excericse to show variable not binding because its trying to access a child
-
-
-// Key Learning Point: functions create scopes, scopes can access outer scopes, not siblings and not children scopes
