@@ -42,7 +42,7 @@ describe('Neo is trying to be authenticated, fix the broken code!', function() {
       handle: 'neo',
       authenticated: true
     }
-    assert.equal(authenticateUser(), correctAnswer)
+    assert.deepEqual(sendDataToClient(), correctAnswer)
   })
 
 })
