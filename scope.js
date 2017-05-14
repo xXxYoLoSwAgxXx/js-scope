@@ -19,7 +19,7 @@ function outerFunction() {
     var world = 'World';
     return /* answer here */;
   }
-  innerFunction();
+  return innerFunction();
 }
 
 
